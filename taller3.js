@@ -1,17 +1,14 @@
-function desglosarString(cadena, tipo="vocales") {
-    let vocales = 0;
-    let consonantes = 0;
-    cadena.split("").forEach(letra => {
-        if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
-            vocales++;
-        } else {
-            consonantes++;
-        }
-    });
-    if(!tipo) {
-        return consonantes
-    }
-    return vocales;
-}
+function desglosarString(str, tipo="vocales") {
+    let contador = 0;
 
-console.log(desglosarString("houla", "vocales")); // 2
+    for (let i = 0; i < str.length; i++) {
+        const caracter = str.charAt(i);
+        if (tipo === "vocales" && "aeiouAEIOU".indexOf(caracter) !== -1) {
+            contador++;
+        } else if (tipo === "consonantes" && "aeiouAEIOU".indexOf(caracter) === -1) {
+            contador++;
+        }
+    }
+
+    return contador;
+}
