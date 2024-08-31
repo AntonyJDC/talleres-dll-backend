@@ -12,3 +12,17 @@ function desglosarString(str, tipo="vocales") {
 
     return contador;
 }
+
+function twoSum(lista, numero){
+    let resultado = [];
+    for (let i = 0; i < lista.length; i++) {
+        for (let j = i+1; j < lista.length; j++) {
+            if (lista[i] + lista[j] === numero) {
+                resultado.push(i);
+                resultado.push(j);
+                return resultado;
+            }
+        }
+    }
+    return resultado;
+}
