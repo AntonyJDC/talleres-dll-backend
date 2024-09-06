@@ -12,4 +12,14 @@
 
 # Taller 2: 
 
+1-  Desarrolle una funcion llamada findMax que reciba una lista de números por parámetro y retorne el mayor valor.
+
+2- Desarrolle una funcion llamada includes que reciba una lista de números y un numero por parámetro y retorne un booleano representando si el numero se encuentra en la lista.
+
+3- Desarrolle una funcion llamada sum que reciba una lista de números y retorne la suma de los elementos de la lista.
+
+4- Desarrolle una funcion llamada missingNumbers que reciba una lista de números y retorne una lista de los números faltantes entre el menor y mayor de la lista.
+
+
+
 # Taller 3: 
