@@ -51,3 +51,43 @@ function puntoDos(estudiantes) {
     return nombres;
   }
   
+/**
+ * Implemente una funcion que reciba los datos de estudiantes y
+ * retorne una lista con los id de cada estudiante unicamente, y tras
+ * ser ordenados ascendentemente por altura.
+ *
+ * Los 'estudiantes' vienen del archivo 'datos.json', que ya fue importado para ustedes.
+ */
+function puntoTres(estudiantes) {
+    let ids = [];
+    for (let i = 0; i < estudiantes.length; i++) {
+      ids.push(estudiantes[i]._id);
+    }
+    return ids.sort((a, b) => a - b);
+  }
+
+/**
+ * Implemente una funcion que reciba una lista de numeros y
+ * retorne el promedio de la lista.
+ */
+function puntoCuatro(numeros) {
+    let suma = 0;
+    for (let i = 0; i < numeros.length; i++) {
+      suma += numeros[i];
+    }
+  
+    return suma / numeros.length;
+  }
+  
+  
+  /**
+   * Implemente una funcion que reciba una palabra y retorne si
+   *  la palabra es palindroma o no.
+   */
+  function puntoCinco(palabra) {
+    let palabraInvertida = puntoSeis(palabra);
+    if (palabra === palabraInvertida) {
+      return true;
+    }
+    return false;
+  }
