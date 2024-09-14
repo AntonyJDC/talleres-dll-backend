@@ -36,3 +36,18 @@ function puntoUno(estudiantes) {
 
   return estudiantesMatriculaCondicional;
 }
+
+/**
+ * Implemente una funcion que reciba los datos de estudiantes y
+ * retorne una lista con el nombre completo de cada estudiante.
+ *
+ * Los 'estudiantes' vienen del archivo 'datos.json', que ya fue importado para ustedes.
+ */
+function puntoDos(estudiantes) {
+    let nombres = [];
+    for (let i = 0; i < estudiantes.length; i++) {
+      nombres.push(estudiantes[i].nombre + " " + estudiantes[i].apellido);
+    }
+    return nombres;
+  }
+  
