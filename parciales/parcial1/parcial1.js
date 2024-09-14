@@ -91,3 +91,37 @@ function puntoCuatro(numeros) {
     }
     return false;
   }
+
+  /**
+ * Implemente una funcion que reciba una palabra y la invierta.
+ */
+function puntoSeis(palabra) {
+    let palabraInvertida = "";
+    for (let i = palabra.length - 1; i >= 0; i--) {
+      palabraInvertida += palabra[i];
+    }
+  
+    return palabraInvertida;
+  }
+  
+  /**
+   * Implemente una funcion que reciba una lista de objetos cualquiera
+   * y un parametro y retorne la lista de objetos ordenada ascendemente
+   * segun el valor del parametro.
+   */
+  
+  
+  function puntoSiete(lista, parametro) {
+    return lista.sort((a, b) => a[parametro] - b[parametro]);
+  }
+  
+  module.exports = {
+    puntoUno,
+    puntoDos,
+    puntoTres,
+    puntoCuatro,
+    puntoCinco,
+    puntoSeis,
+    puntoSiete,
+  };
+  
