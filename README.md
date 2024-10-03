@@ -23,3 +23,7 @@
 
 
 # Taller 3: 
+
+1- Desarrolle una funcion llamada desglosarString que reciba una string, y la string "vocales" o "consonantes", y retorne la cantidad de vocales o consonantes de la string recibida.
+2- Desarrolle una funcion llamada twoSum que reciba una lista de numeros enteros y otro numero entero y retorne los indices de los numeros del arreglo que sumados sean el otro numero.
+3- Desarrolle una funcion llamada conversionRomana que reciba una string de cifras romanas y retorne el equivalente en cifras arábigas
