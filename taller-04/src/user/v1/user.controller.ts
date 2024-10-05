@@ -54,9 +54,10 @@ export async function userExists(req: Request, res: Response): Promise<void> {
 
 export async function getExperience(req: Request, res: Response): Promise<void> {
   try {
+    const team = req.query.team as string;
     const users = await readUsers();
 
-    const totalExperience = users.reduce((acc, user) => acc + user.years, 0);
+    const totalExperience = users.filter(user => user.team === team).reduce((acc, user) => acc + user.years, 0);
 
     res.json({ experiencia: totalExperience });
   } catch (error) {
